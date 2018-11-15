@@ -1,0 +1,17 @@
+{
+  "extends": ["tslint-config-standart"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    "align": false,
+    "import-name": false,
+    "variable-name": false,
+    "max-line-length": [true, 150],
+    "no-boolean-literal-compare": false
+  }
+}
