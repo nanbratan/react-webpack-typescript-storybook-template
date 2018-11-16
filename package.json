@@ -9,29 +9,39 @@
   "dependencies": {
     "@types/react": "^16.7.6",
     "@types/react-dom": "^16.0.9",
+
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "@types/storybook__addon-info": "^3.4.2",
-    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/react": "^4.0.7",
     "@storybook/addon-info": "^4.0.7",
     "@storybook/addon-links": "^4.0.7",
     "@storybook/addon-options": "^4.0.7",
-    "@storybook/react": "^4.0.7",
+    "@storybook/addon-actions": "^4.0.7",
+
+    "@types/storybook__react": "^4.0.0",
+    "@types/storybook__addon-info": "^3.4.2",
     "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__addon-options": "^3.2.2",
-    "@types/storybook__react": "^4.0.0",
-    "awesome-typescript-loader": "^5.2.1",
-    "common-config-webpack-plugin": "^0.4.4",
+
+
     "cross-env": "^5.2.0",
+
     "css-loader": "^1.0.1",
-    "html-webpack-plugin": "^3.2.0",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "ts-config-webpack-plugin": "^0.4.4",
+    "awesome-typescript-loader": "^5.2.1",
+
+    "typescript": "^3.1.6",
+
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.1",
-    "typescript": "^3.1.6",
+
+
+    "html-webpack-plugin": "^3.2.0",
+    "ts-config-webpack-plugin": "^0.4.4",
+    "common-config-webpack-plugin": "^0.4.4",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
