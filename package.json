@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-typescript-storybook-template",
+  "name": "fantobulous",
   "author": "Odinochenkov Igor",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server",
@@ -27,7 +27,6 @@
 
     "cross-env": "^5.2.0",
 
-    "css-loader": "^1.0.1",
     "awesome-typescript-loader": "^5.2.1",
 
     "typescript": "^3.1.6",
