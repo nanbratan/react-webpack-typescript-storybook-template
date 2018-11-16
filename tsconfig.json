@@ -21,6 +21,6 @@
     "emitDecoratorMetadata": true,
     "jsx": "react"
   },
-  "include": ["./src/**/*", ".storybook/webpack.config.js", "stories/index.tsx"],
+  "include": ["./src/**/*", ".storybook/webpack.config.js", "stories/index.tsx", ".storybook/addons.ts", ".storybook/config.tsx"],
   "exclude": ["node_modules", "build", "scripts"]
 }

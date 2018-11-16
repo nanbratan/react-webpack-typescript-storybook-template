@@ -1,0 +1,16 @@
+.container {
+  display: flex
+}
+
+.cellContainer {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(72, 78, 104);
+}
+
+.firstCellContainer {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(72, 78, 104);
+  margin-right: 20px
+}

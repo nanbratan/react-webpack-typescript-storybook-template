@@ -2,6 +2,7 @@ const JsConfigWebpackPlugin = require('js-config-webpack-plugin');
 const TsConfigWebpackPlugin = require('ts-config-webpack-plugin');
 const FontConfigWebpackPlugin = require('font-config-webpack-plugin');
 const ImageConfigWebpackPlugin = require('image-config-webpack-plugin');
+const ScssConfigWebpackPlugin = require('scss-config-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const path = require('path');
@@ -24,6 +25,7 @@ const defaultPlugins = [
   new TsConfigWebpackPlugin(),
   new FontConfigWebpackPlugin(),
   new ImageConfigWebpackPlugin(),
+  new ScssConfigWebpackPlugin(),
   HTMLWebpackPluginConfig,
 ];
 
