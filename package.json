@@ -23,8 +23,6 @@
     "@types/storybook__addon-options": "^3.2.2",
     "@types/storybook__react": "^4.0.0",
     "awesome-typescript-loader": "^5.2.1",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
     "common-config-webpack-plugin": "^0.4.4",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.1",
