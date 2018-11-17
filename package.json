@@ -29,6 +29,7 @@
     "babel-loader": "^8.0.4",
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^1.0.1",
+    "style-loader": "^0.23.1",
     "tslint": "^5.11.0",
     "tslint-react": "^3.6.0",
     "tslint-config-airbnb": "^5.11.1",
