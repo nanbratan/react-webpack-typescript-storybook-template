@@ -1,43 +1,37 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPlugin = require("html-webpack-plugin");
 
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  template: path.join(__dirname, '/public/index.html'),
-  filename: 'index.html',
-  inject: 'body',
+  template: path.join(__dirname, "/public/index.html"),
+  filename: "index.html",
+  inject: "body"
 });
 
-const DefinePluginConfig = new webpack.DefinePlugin({
-  'process.env.NODE_ENV': JSON.stringify('production'),
-});
+const development = process.env.NODE_ENV !== "production";
 
-const development = process.env.NODE_ENV !== 'production';
-
-const defaultPlugins = [
-  HTMLWebpackPluginConfig,
-];
+const defaultPlugins = [HTMLWebpackPluginConfig];
 
 const developmentPlugins = [new webpack.HotModuleReplacementPlugin()];
 
-const productionPlugins = [DefinePluginConfig];
+const productionPlugins = [];
 
 const plugins = defaultPlugins.concat(
   development ? developmentPlugins : productionPlugins
 );
 
 module.exports = {
-  entry: path.join(__dirname, '/src/index.tsx'),
-  
+  entry: path.join(__dirname, "/src/index.tsx"),
+
   output: {
-    filename: 'bundle.js',
-    path: __dirname + '/dist',
+    filename: "bundle.js",
+    path: __dirname + "/dist"
   },
 
-  mode: development ? 'development' : 'production',
+  mode: development ? "development" : "production",
 
-  resolve: { 
+  resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
 
@@ -46,22 +40,19 @@ module.exports = {
       { test: /\.(tsx?|d.ts)$/, loader: "awesome-typescript-loader" },
       {
         test: /\.css$/,
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" }
-        ]
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
       }
     ]
   },
-  
+
   plugins: plugins,
 
   devServer: {
-    host: 'localhost',
-    port: '3000',
+    host: "localhost",
+    port: "3000",
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      "Access-Control-Allow-Origin": "*"
     },
-    historyApiFallback: true,
-  },
+    historyApiFallback: true
+  }
 };
