@@ -9,12 +9,11 @@ module.exports = (baseConfig, env, config) => {
     resolve: {
       plugins: [
           new TsConfigPathsPlugin({ configFileName: '../tsconfig.json' })
-      ]
+      ],
     }
   });
 
   config.plugins.push(new TSDocgenPlugin()); // optional
   config.resolve.extensions.push('.ts', '.tsx');
-
   return config;
 };
