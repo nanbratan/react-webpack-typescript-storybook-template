@@ -16,6 +16,6 @@
 > yarn build
 ```
 
-The build includes a minimal set of dependencies for working with react + typescripy + storybook.
+The build includes a minimal set of dependencies for working with react + typescript + storybook.
 
 To upload the documentation into the react-storybook, the `react-docgen-typescript-webpack-plugin` was used.
